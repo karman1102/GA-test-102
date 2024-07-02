@@ -1,0 +1,12 @@
+name: Karman first workflow
+on: workflow_dispatch #this event makes sure the workflow can be triggered manually
+
+jobs: #defines what needs to be done
+  first-job: 
+    runs-on: ubuntu-20.04 # we first define the runner
+    steps:
+      - name: Print Greeting
+        run: echo "hello world"
+      - name: Print Goodbye
+        run: echo "Goodbye"
+      
